@@ -113,8 +113,9 @@ body{
 .card{
     background:#fff;
     border-radius:8px;
-    padding:18px;
+    padding:12px; /* Reduce padding for better use of space */
     box-shadow:0 6px 20px rgba(12,15,30,0.04);
+    min-height: 200px; /* Ensure cards have a larger vertical size */
     animation:fadeInUp .6s ease both/*、ロード時に下からふわっと表示される動きになります。*/
 }
 .card h2{margin-top:0;color:var(--brand)}
@@ -154,8 +155,8 @@ body{
     /* スマホ用レイアウトの調整 */
 
     .page {
-        width: 90%; /* ページ全体の幅を画面幅に応じて縮小 */
-        margin: 20px auto; /* 上下の余白を縮小 */
+        width: 95%; /* Slightly increase page width for better readability */
+        margin: 30px auto; /* Adjust margins for better spacing */
     }
 
     .site-header {
@@ -174,38 +175,29 @@ body{
     }
 
     .main-nav a {
-        font-size: 0.85em; /* ナビゲーションリンクのフォントサイズをさらに縮小 */
+        font-size: 1em; /* Increase font size for better readability */
     }
 
     .hero {
-        flex-direction: column; /* ヒーローセクションを縦に並べる */
-        gap: 12px; /* ヒーロー内の余白を調整 */
+        gap: 16px; /* Increase spacing for better visual separation */
     }
 
     .banner {
-        height: auto; /* 高さを自動調整 */
-        max-height: 200px; /* 最大高さを制限 */
-        width: 100%; /* 横幅を親要素に合わせる */
-    }
-
-    .invite {
-        width: 100%; /* 招待ボタンを画面幅に合わせる */
-        align-items: center; /* 中央揃え */
+        max-height: 250px; /* Increase maximum height for better visibility */
     }
 
     .invite-btn {
-        padding: 8px 14px; /* ボタンの内側余白をさらに縮小 */
-        font-size: 0.85em; /* ボタンのフォントサイズを縮小 */
+        padding: 12px 18px; /* Restore padding for better usability */
+        font-size: 1em; /* Increase font size for better readability */
     }
 
     .content {
-        grid-template-columns: 1fr; /* カードを縦に並べる */
-        gap: 12px; /* カード間の余白を調整 */
+        gap: 16px; /* Increase spacing between cards */
     }
 
     .card {
-        padding: 12px; /* カード内の余白を調整 */
-        font-size: 0.9em; /* カード全体のフォントサイズを縮小 */
+        padding: 12px; /* Adjust padding for better content spacing */
+        font-size: 1em; /* Increase font size for better readability */
     }
 }
 
